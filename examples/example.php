@@ -3,9 +3,9 @@
 require __DIR__.'/../vendor/autoload.php';
 
 $loop = React\EventLoop\Factory::create();
-$pcntl = new MKraemer\ReactPCNTL\PCNTL($loop);
+$signalHandler = new React\Signals\Handler($loop);
 
-$pcntl->on(SIGTERM, function () {
+$signalHandler->on(SIGTERM, function () {
     // Clear some queue
     // Write syslog
     // Do ALL the stuff
@@ -13,7 +13,7 @@ $pcntl->on(SIGTERM, function () {
     die();
 });
 
-$pcntl->on(SIGINT, function () {
+$signalHandler->on(SIGINT, function () {
     echo 'Terminated by console'.PHP_EOL;
     die();
 });

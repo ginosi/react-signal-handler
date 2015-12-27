@@ -1,11 +1,11 @@
 <?php
 
-namespace MKraemer\ReactPCNTL;
+namespace React\Signals;
 
 use Evenement\EventEmitter;
 use React\EventLoop\LoopInterface;
 
-class PCNTL extends EventEmitter
+class Handler extends EventEmitter
 {
     /**
      * Constructor. Registers a periodicTimer to call

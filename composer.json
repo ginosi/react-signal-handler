@@ -1,20 +1,20 @@
 {
-    "name": "mkraemer/react-pcntl",
-    "description": "PCNTL bindings for ReactPHP",
+    "name": "pahenrus/react-signals",
+    "description": "Unix signals handling for ReactPHP",
     "keywords": ["pcntl", "react"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Marius Krämer",
-            "email": "marius@marius-kraemer.de"
+            "name": "Pavel Kozlov",
+            "email": "pavel@internet-ufa.ru"
         }
     ],
     "autoload": {
-        "psr-0": { "MKraemer": "src/" }
+        "psr-4": { "React\\Signals\\": "src/" }
     },
     "require": {
         "ext-pcntl": "*",
-        "evenement/evenement": "2.0.*",
-        "react/event-loop": "0.4.*"
+        "evenement/evenement": "^2.0",
+        "react/event-loop": "dev-master"
     }
 }
