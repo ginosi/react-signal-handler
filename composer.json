@@ -1,5 +1,5 @@
 {
-    "name": "pahenrus/react-signals",
+    "name": "jiromm/react-signal-handler",
     "description": "Unix signals handling for ReactPHP",
     "keywords": ["pcntl", "react", "reactphp"],
     "license": "MIT",
