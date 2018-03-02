@@ -14,7 +14,7 @@
     },
     "require": {
         "ext-pcntl": "*",
-        "evenement/evenement": "^3.0",
-        "react/event-loop": "^0.5"
+        "evenement/evenement": "^2.0",
+        "react/event-loop": "^0.4"
     }
 }
