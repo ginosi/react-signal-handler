@@ -27,7 +27,7 @@ class Handler extends EventEmitter
      */
     public function on($signo, callable $listener)
     {
-        pcntl_signal($signo, array($this, 'emit'));
+        pcntl_signal($signo, array($this, 'forward'));
         parent::on($signo, $listener);
     }
 
@@ -37,5 +37,10 @@ class Handler extends EventEmitter
     public function __invoke()
     {
         pcntl_signal_dispatch();
+    }
+
+    public function forward($event, $res)
+    {
+        $this->emit($event, array_values($res));
     }
 }

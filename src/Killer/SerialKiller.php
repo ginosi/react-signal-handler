@@ -44,12 +44,12 @@ class SerialKiller implements KillerInterface
     private function setupSignalHandler()
     {
         foreach ($this->signals as $signal) {
-            $this->signalHandler->on($signal, function ($signal) {
+            $this->signalHandler->on($signal, function ($signo, $errno, $code) {
                 if (!is_callable($this->beforeUnload)) {
                     return;
                 }
 
-                ($this->beforeUnload)($signal);
+                ($this->beforeUnload)($signo, $errno, $code);
             });
         }
     }

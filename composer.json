@@ -13,8 +13,9 @@
         "psr-4": { "React\\Signals\\": "src/" }
     },
     "require": {
+        "php": "^7.0",
         "ext-pcntl": "*",
-        "evenement/evenement": "^2.0",
-        "react/event-loop": "^0.4"
+        "evenement/evenement": "^3.0",
+        "react/event-loop": "^0.5"
     }
 }
