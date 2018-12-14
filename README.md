@@ -2,12 +2,12 @@
 
 Unix signals handler for [React PHP](https://github.com/reactphp).
 
-##Install
+## Install
 
 The best way to install this library is through [composer](http://getcomposer.org):
 
 ```Bash
-$ composer require jiromm/react-signals-handler
+$ composer require jiromm/react-signal-handler
 ```
 
 ## Usage
@@ -36,7 +36,6 @@ $killer->onExit(function ($signal) use ($loop) {
 });
 
 $loop->run();
-
 
 ```
 
