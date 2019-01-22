@@ -4,10 +4,21 @@ Unix signals handler for [React PHP](https://github.com/reactphp).
 
 ## Install
 
-The best way to install this library is through [composer](http://getcomposer.org):
+Add code snippet below to your composer.json file.
 
-```Bash
-$ composer require jiromm/react-signal-handler
+```
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/ginosi/react-signal-handler"
+    }
+  ]
+```
+
+And choose version you want to use
+
+```
+"ginosi/react-signal-handler": "^1.2"
 ```
 
 ## Usage
