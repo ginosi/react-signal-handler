@@ -3,19 +3,16 @@
     "description": "Unix signals handling for ReactPHP",
     "keywords": ["pcntl", "react", "reactphp"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Aram Baghdasaryan",
-            "email": "aram@jiromm.com"
-        }
-    ],
     "autoload": {
-        "psr-4": { "React\\Signals\\": "src/" }
+        "psr-4": {
+          "React\\Signals\\": "src/"
+        }
     },
     "require": {
         "php": "^7.0",
         "ext-pcntl": "*",
+
         "evenement/evenement": "^3.0",
-        "react/event-loop": "^0.5"
+        "react/event-loop": "^1.0"
     }
 }
